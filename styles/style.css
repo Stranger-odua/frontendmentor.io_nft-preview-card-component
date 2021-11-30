@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+@import-normalize;
+/* bring in normalize.css styles */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #0d192b;
+  font-family: Outfit;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 350px;
+}
+
+.card {
+  background-color: #0d192b;
+}
+.card__content {
+  background-color: #14253d;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.content__link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  background: #00fff7;
+  margin: 0 25px;
+  border-radius: 7px;
+}
+.content__link:hover .content__photo {
+  opacity: 0.5;
+}
+.content__link:hover .content__svg {
+  transform: scale(1);
+}
+.content__photo {
+  display: block;
+  margin: 0 auto;
+  width: 302px;
+  height: 302px;
+  transition: opacity 0.3s;
+}
+.content__svg {
+  display: block;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  transition: transform 0.3s ease 0s;
+  transform: scale(0);
+}
+.content__title {
+  font-size: 2.2rem;
+  margin: 24px 140px 0 25px;
+}
+.content__title:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+.content__text {
+  color: #8bacda;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-left: 25px;
+  margin-top: 16px;
+  line-height: 1.4;
+}
+.content__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.content__ethereum {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 9px;
+}
+.content__published {
+  margin-top: 9px;
+  margin-right: 25px;
+}
+.content__separator {
+  border: none;
+  background-color: #8bacda;
+  height: 1px;
+  width: 300px;
+  opacity: 0.3;
+  margin-top: 25px;
+}
+.content__footer {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.ethereum {
+  color: #00fff7;
+  display: flex;
+}
+.ethereum__icon {
+  margin-left: 4px;
+}
+.ethereum__value {
+  margin-left: 7px;
+}
+.ethereum__units {
+  margin-left: 6px;
+}
+
+.published {
+  color: #8bacda;
+  font-size: 1.6rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-end;
+}
+.published__icon {
+  margin-right: 7px;
+}
+.published__value {
+  margin-right: 5px;
+}
+.footer {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 300;
+  align-items: center;
+}
+.footer__icon {
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.footer__copyright {
+  color: #8bacda;
+  margin-left: 16px;
+}
+.footer__author {
+  margin-left: 6px;
+}
+.footer__author:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+
+/*# sourceMappingURL=style.css.map */
